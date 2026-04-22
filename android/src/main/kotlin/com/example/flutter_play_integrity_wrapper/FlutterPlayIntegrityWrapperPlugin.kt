@@ -71,7 +71,7 @@ class FlutterPlayIntegrityWrapperPlugin: FlutterPlugin, MethodCallHandler {
     private fun getErrorText(errorCode: Int): String {
         return when (errorCode) {
             IntegrityErrorCode.API_NOT_AVAILABLE -> "Integrity API is not available."
-            IntegrityErrorCode.NO_NETWORK -> "No network connection."
+            IntegrityErrorCode.NETWORK_ERROR -> "No network connection."
             IntegrityErrorCode.PLAY_STORE_NOT_FOUND -> "Play Store not found."
             IntegrityErrorCode.PLAY_STORE_VERSION_OUTDATED -> "Play Store version is outdated."
             IntegrityErrorCode.APP_NOT_INSTALLED -> "App is not installed."
